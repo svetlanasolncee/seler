@@ -134,12 +134,7 @@
             });
             
             $('#content-download a').click(function() {
-                if (remake) {
-                    $(this).attr('href', url);
-                    window.open(url);
-                } else {
-                    window.open(dataUrl);
-                }
+                document.getElementById('cout').src = $('#download').attr('href');
                 return false;
             });
         });
@@ -160,6 +155,7 @@
         </div>
     </div>
     <div class="footer">
+            <iframe id="cout" style="display:none;"></iframe>
             <div id="content-preloader" class="preloader loading">
                 <span class="slice"></span>
                 <span class="slice"></span>
