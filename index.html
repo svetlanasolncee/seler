@@ -134,7 +134,7 @@
             });
             
             $('#content-download a').click(function() {
-                document.getElementById('cout').src = url;
+                document.getElementById('cout').src = $('#content-download a').attr('href');
                 return false;
             });
         });
